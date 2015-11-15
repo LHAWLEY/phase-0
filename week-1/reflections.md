@@ -55,3 +55,12 @@ I think that it will be most important to know the commands that allow us to mov
 -help (allows you to look up commands)
 
 #H3 1.4 Forking and Cloning Reflection
+
+1. If you were going to write instructions for a new person on how to create a new repo, fork a repo, and clone a repo, what would they be? Why would you fork a repository as opposed to create a new one?
+To create a new repo you need to log into your github account. Then in the top right corner you click the “+” sign, click on the drop down and select “new repository”. When the “create a new repository” screen pops up enter a short descriptive Repository name.  Then you can select your settings decide if you would like to make the repository public or private. Then selection under "Initialize this repository with a README" then click “Create repository".
+To fork a repo you log into github pick the repository that you would like to fork.  In the top right hand corner click the “fork” icon and select the account you would like to assign it to.
+To clone a repo select URL of the repo you would like to clone from github and on the lower right hand side you will see a URL under HTTPS.  In your terminal type "git clone (paste your URL)".
+You would fork a repository instead of creating a new one because you want to work on a file that someone else has created, but on your own without affecting the master document.  If you created a new repo it would just be a blank repository with no content to work off of.
+
+2. What struggles did you have setting up git and GitHub? What did you learn in the process?
+I did not think setting up git and GitHub was too difficult.  I thought that navigating in git was what created difficulty for me specifically deleting the local copy using the command line.  I found GitHub to be really easy to navigate and I think that the videos and reading materials did a really great job explaining the basic commands and processes necessary to work in GitHub.  I think I learned that I need to practice my commands and really take my time when working in git.
