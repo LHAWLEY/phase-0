@@ -1,4 +1,4 @@
-![Alt My Reflection](desktop/DBC/Phase 0/phase-0/week-2/imgs/site-map.png)
+![Alt My Reflection](/imgs/site-map.png)
 
 1.  What are the 6 Phases of Web Design?
 
@@ -43,6 +43,7 @@ User experience design is the implementation of design elements that enhance a u
 7.  Which parts of the challenge did you find tedious?
 
 I think the part of this challenge that I found most tedious was trying to map out my ideas.  It is probably the simpliest thing to do and yet I think it is also the most abstract thing to do.  I felt like I wanted to keep going deeper into the design and layout process.
+
 
 
 

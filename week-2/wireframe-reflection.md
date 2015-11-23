@@ -1,5 +1,5 @@
-![Alt Wireframe Index](desktop/DBC/"Phase 0"/"phase-0"/"week-2"/imgs/wireframe-index.png)
-![Alt Wireframe Blog Index](desktop/DBC/"Phase 0"/"phase-0"/"week-2"/imgs/wireframe-blog.index.png)
+![Alt Wireframe Index](../imgs/wireframe-index.png)
+![Alt Wireframe Blog Index](../imgs/wireframe-blog.index.png)
 
 1. What is a wireframe?
 
