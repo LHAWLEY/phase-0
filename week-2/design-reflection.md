@@ -1,4 +1,4 @@
-![Alt My Reflection](/imgs/site-map.png?raw=true)
+![Alt My Reflection](imgs/site-map.png?raw=true)
 
 1.  What are the 6 Phases of Web Design?
 
