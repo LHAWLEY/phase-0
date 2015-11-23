@@ -1,5 +1,5 @@
-![Alt Wireframe Index](../imgs/wireframe-index.png)
-![Alt Wireframe Blog Index](../imgs/wireframe-blog.index.png)
+![Alt Wireframe Index](imgs/wireframe-index.png?raw=true)
+![Alt Wireframe Blog Index](imgs/wireframe-blog.index.png?raw=true)
 
 1. What is a wireframe?
 
