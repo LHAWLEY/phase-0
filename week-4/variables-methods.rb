@@ -33,3 +33,8 @@ favorite_number
 # You make sure you are in the right directory and then you type rspec followed by the file name.
 #What was confusing about this material? What made sense?
 # I think that this section was pretty easy to understand I think that running the ruby files was pretty easy and I feel like I gained a pretty good understanding of the difference between a method and a variable and how they interact with one another.
+
+#Return a Formatted Address
+#https://github.com/LHAWLEY/phase-0/blob/master/week-4/address/my_solution.rb
+#Defining Math Methods
+#https://github.com/LHAWLEY/phase-0/blob/master/week-4/math/my_solution.rb
