@@ -43,3 +43,12 @@ Local variables are variables that are inside of a method and that is where they
 How was this challenge? Did you get a good review of some of the basics?
 
 This challenge was great.  It was a really helpful review.  I have not touched Ruby since I finished my admissions interview with DBC, months ago.  I am really glad this material was presented in conjunction with the readings.  I think the books and practice problems helped solidify my basic understanding of Ruby.
+
+Defining Variables
+https://github.com/LHAWLEY/phase-0/blob/master/week-4/defining-variables.rb
+
+Simple String Methods
+https://github.com/LHAWLEY/phase-0/blob/master/week-4/simple-string.rb
+
+Local Variables and Basic Arithmatical Operation
+https://github.com/LHAWLEY/phase-0/blob/master/week-4/basic-math.rb
