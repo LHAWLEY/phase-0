@@ -11,7 +11,7 @@
 # If +list_of_words+ is empty the method should return nil
 
 #Your Solution Below
-def shortest_string(list_of_words)
-  list_of_words.sort_by! {|word| word.length}
-  return list_of_words[0]
+def shortest_string(words)
+  words.sort_by! {|word| word.length}
+  return words[0]
 end

@@ -12,7 +12,7 @@
 
 
 # Your Solution Below
-def longest_string(list_of_words)
-  list_of_words.sort_by! { |word| word.length }
-  return list_of_words [-1]
+def longest_string(words)
+  words.sort_by! { |word| word.length }
+  return words [-1]
 end

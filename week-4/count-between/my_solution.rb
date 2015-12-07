@@ -16,7 +16,7 @@
 
 
 # Your Solution Below
-def count_between(list_of_integers, lower_bound, upper_bound)
+def count_between(integers, lower_bound, upper_bound)
   range = (lower_bound..upper_bound)
-  list_of_integers.count { |i| range.include?(i) }
+  integers.count { |i| range.include?(i) }
 end
