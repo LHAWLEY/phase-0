@@ -11,6 +11,6 @@
 # If +list_of_nums+ is empty the method should return nil
 
 # Your Solution Below
-def largest_integer(list_of_nums)
-  list_of_nums.min
+def smallest_integer(numbers)
+  numbers.min
 end
