@@ -8,11 +8,11 @@
 # RSpec Tests. They are included in this file because the local variables you are creating are not accessible across files. If we try to run these files as a separate file per normal operation, the local variable checks will return nil.
 num1 = 24
 num2 = 12
-sum = 24 + 12
-difference = 24 - 12
-quotient = 24.0 / 12.0
-product = 24 * 12
-modulus = 24 % 12
+sum = num1 + num2
+difference = num1 - num2
+quotient = num2 / num1
+product = num1 * num2
+modulus = num1 % num2
 
 describe 'num1' do
   it "is defined as a local variable" do
