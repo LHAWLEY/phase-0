@@ -55,13 +55,19 @@ def mode(array)
 end
 
 # Refactored Solution
- def mode(array)
-  mode_hash = array.inject(Hash.new(0)) { |key,value| key[value] += 1; key }
+#  def mode(array)
+#   mode_hash = array.inject(Hash.new(0)) { |key,value| key[value] += 1; key }
 
-  outputArray = []
-  mode_hash.each { |k, v| output_array[output_array.length] = k if v == mode_hash.values.max }
+#   outputArray = []
+#   mode_hash.each { |k, v| output_array[output_array.length] = k if v == mode_hash.values.max }
 
-  return output_array
+#   output_array
+# end
+
+
+def mode(list)
+  highest_frequency = list.map { |number| list.count(number) }.max
+  list.select { |number| list.count(number) == highest_frequency }.uniq
 end
 
 
