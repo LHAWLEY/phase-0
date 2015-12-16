@@ -1,35 +1,29 @@
 # Your Names
-# 1)
-# 2)
+# 1)LeeAnne Hawley
+# 2) Sabri Helal
 
-# We spent [#] hours on this challenge.
 
-# Bakery Serving Size portion calculator.
+def serving_size_calc(item, num_of_servings)
+  menu = {"cookie" => 1, "cake" =>  5, "pie" => 7}
+  raise ArgumentError.new("#{item} is not a valid input") unless menu[item]
 
-def serving_size_calc(item_to_make, num_of_ingredients)
-  library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
-  error_counter = 3
+  serving_size = menu[item]
+  remaining_hungry_people = num_of_servings % serving_size
+  remaining_servings = num_of_servings / serving_size
+  message = "Calculations complete: Buy #{remaining_servings} #{item}(s)"
 
-  library.each do |food|
-    if library[food] != library[item_to_make]
-      error_counter += -1
-    end
-  end
-
-  if error_counter > 0
-    raise ArgumentError.new("#{item_to_make} is not a valid input")
-  end
-
-  serving_size = library.values_at(item_to_make)[0]
-  remaining_ingredients = num_of_ingredients % serving_size
-
-  case remaining_ingredients
-  when 0
-    return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}"
+  if remaining_hungry_people == 0
+    message
+  elsif remaining_hungry_people > menu['cake'] - 1
+    "#{message}, 1 cake and #{remaining_hungry_people % menu['cake']} cookie(s)"
   else
-    return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+    "#{message} and #{remaining_hungry_people % serving_size} cookie(s)"
   end
 end
+
+
+
+
 
 p serving_size_calc("pie", 7)
 p serving_size_calc("pie", 8)
@@ -37,6 +31,24 @@ p serving_size_calc("cake", 5)
 p serving_size_calc("cake", 7)
 p serving_size_calc("cookie", 1)
 p serving_size_calc("cookie", 10)
-p serving_size_calc("THIS IS AN ERROR", 5)
+p serving_size_calc("pie", 13)
+p serving_size_calc("pie", 10)
+# p  serving_size_calc("THIS IS AN ERROR", 5)
 
 #  Reflection
+
+# What did you learn about making code readable by working on this challenge?
+
+#
+
+# Did you learn any new methods? What did you learn about them?
+
+#
+
+# What did you learn about accessing data in hashes?
+
+#
+
+# What concepts were solidified when working through this challenge?
+
+#
