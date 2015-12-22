@@ -7,8 +7,13 @@
 # Pseudocode
 
 # Input:  A name
-# Output:
-# Steps:
+# Output: A greeting with the name from the NameData class
+# Steps: Create a class NameData
+# Initialize a variable name the is set to a name.
+# Create a reader method that returns the initilized name.
+# Create a class Greetings
+# Initialize Greetings with an instance of the NameData class.
+# Create a method new method in the Greetings class that puts a string to the console using the name that NameData was initialized with.
 
 class NameData
 
@@ -34,6 +39,7 @@ end
 greet = Greetings.new
 greet.hello
 
+# For any name?  Look into removing myself as a constant.
 
 # Reflections
 
