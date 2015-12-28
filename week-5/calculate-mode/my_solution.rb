@@ -70,7 +70,6 @@ def mode(list)
   list.select { |number| list.count(number) == highest_frequency }.uniq
 end
 
-
 # Relfection
 
 # Which data structure did you and your pair decide to implement and why?
