@@ -155,7 +155,7 @@ p new_game.check_board
 
 # How did you determine what should be an instance variable versus a local variable?
 
-# In my initial solution I used all instance variables.
+# In my initial solution I used all instance variables because I wanted to be able to transfer information between my methods.  In my refactored solution I local variables because all of the variables only needed to be used in the individual methods.
 
 # What do you feel is most improved in your refactored solution?
 
