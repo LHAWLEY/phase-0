@@ -56,7 +56,8 @@ RELEASE 6
 ![Alt My Reflection](Release_6.png?raw=true)
 
 
-  REFLECTION
+REFLECTION
+
 1.  What are databases for?
 
 Databases are a way to store and retrieve information.
