@@ -55,9 +55,8 @@ RELEASE 6
 
 ![Alt My Reflection](Release_6.png?raw=true)
 
-Link for Image
 
-<!--  REFLECTION
+  REFLECTION
 1.  What are databases for?
 
 Databases are a way to store and retrieve information.
@@ -79,4 +78,4 @@ You can determine which is which by looking at the tables.  There should always 
 You can select information from a database by typying the key word SELECT.  Followed by other key word instructions dictating what you would like selected.
 
 Some good things to remember when selecting information from databases is that your key words should always be capitalized and that you should end each statement with a semi-colon.
--->
+
