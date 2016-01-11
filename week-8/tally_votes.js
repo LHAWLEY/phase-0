@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
 // I worked on this challenge with: Karen Ball
-// This challenge took me [#] hours.
+// This challenge took me [3] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -63,59 +63,43 @@ var officers = {
 }
 
 // Pseudocode
-
-
+/*
+// Iterate through the votes object
+// Record each student's vote in the voteCount object
+// Tally the number of votes each person received
+// Store the winner's names in the officers object
+*/
 // __________________________________________
 // Initial Solution
-
-// for went through votes properties
-
-//   for went through each name in the votes properties
-
-
-
-//     we get positon
-//     who is elected in that position
-
-//     voteCount will have properties position
-//     in each of those position properties we will have all the names as properties
-//     and those names will have a number as value
-
-//     everytime a name gets pings we get +1
-
-//   end
-
-// end
 
 var votesNamesArray = Object.keys(votes);
 // console.log(votesNamesArray)
 
-// go through votes properties which are the names
+// Go through votes properties which are the names
 for (var x = 0 ; x < votesNamesArray.length; x++) {
 
-  // go through the position votes for each person
+  // Go through the position votes for each person
   var votesPosArray = Object.keys(votes[votesNamesArray[x]]);
   // console.log(votesPosArray);
 
-  console.log(votesNamesArray[x])
+  // console.log(votesNamesArray[x])
   for (var y = 0; y < votesPosArray.length; y++) {
 
-    // we need to get the positon
+    // We need to get the positon
     var position = votesPosArray[y];
-    console.log(position)
+    // console.log(position)
 
 
-    // need to figure out who is elected in that position
+    // Need to figure out who is elected in that position
     var nameElected = votes[votesNamesArray[x]][position]
 
-    console.log(nameElected)
+    // console.log(nameElected)
 
 
-    console.log('\n')
+    // console.log('\n')
 
 
-    // add up votes for each position for each person
-
+    // Add up votes for each position for each person
     if (isNaN(voteCount[position][nameElected]) == true) {
       voteCount[position][nameElected] = 1;
     }
@@ -123,18 +107,10 @@ for (var x = 0 ; x < votesNamesArray.length; x++) {
     else {
       voteCount[position][nameElected] += 1
     }
-
-//     in each of those position properties we will have all the names as properties
-//     and those names will have a number as value
-
-
-//     everytime a name gets pings we get +1
-
   }
-
 }
 
-console.log(voteCount)
+// console.log(voteCount)
 
 var presMaxNum = 0;
 var presMaxName = 0;
@@ -147,7 +123,7 @@ var treMaxName = 0;
 
 var positionArray = Object.keys(voteCount);
 // console.log(positionArray);
-for (var x = 0; x < positionArray.length; x++){
+  for (var x = 0; x < positionArray.length; x++){
   //console.log(positionArray[x]);
   var nameArray = Object.keys(voteCount[positionArray[x]]);
   // console.log(nameArray)
@@ -155,65 +131,57 @@ for (var x = 0; x < positionArray.length; x++){
     //console.log(nameArray[y])
 
 
-    var position = positionArray[x];
-    var name = nameArray[y];
+var position = positionArray[x];
+var name = nameArray[y];
 
     if ((x==0) && (voteCount[position][name] > presMaxNum)) {
-
       presMaxNum = voteCount[position][name];
       presMaxName = name;
-
     }
 
     if ((x==1) && (voteCount[position][name] > viceMaxNum)) {
-
       viceMaxNum = voteCount[position][name];
       viceMaxName = name;
-
-    }
+   }
 
     if ((x==2) && (voteCount[position][name] > secMaxNum)) {
-
       secMaxNum = voteCount[position][name];
       secMaxName = name;
-
     }
 
     if ((x==3) && (voteCount[position][name] > treMaxNum)) {
-
       treMaxNum = voteCount[position][name];
       treMaxName = name;
     }
   }
 }
 
-
 officers.president = presMaxName;
 officers.vicePresident = viceMaxName;
 officers.secretary = secMaxName;
 officers.treasurer = treMaxName;
 
-console.log(officers)
-
-
-
-
+// console.log(officers)
 
 // __________________________________________
 // Refactored Solution
 
-
-
-
-
+// I still need to go back in and refactor this challenge.  I was lucky to make it work in time.  I know that I can get some of the repetitive loops down so that is what my focus is going to be when refactoring.
 
 // __________________________________________
 // Reflection
 
+// What did you learn about iterating over nested objects in JavaScript?
 
+// I learned that iterating over nested objects in JavaScript is easy in theory (like Ruby), but I found that my pair and I really struggled to get through this challenge.  We found ourselves getting stuck trying to figure out how to store and retrieve information and also how to access the specific information we needed.
 
+// Were you able to find useful methods to help you with this?
 
+// In the initial solution I used Object.keys() to pull out all of the keys in the big hash.  Other than that I just used a lot of loops and I think that when I refactor I can minimize those.
 
+// What concepts were solidified in the process of working through this challenge?
+
+// I think that interating through nested arrays was somewhat solidified.  I still need some work in it though.  I think that I mostly struggled with wrapping my head around managing all of the data that we needed.  And as you can probably tell by my solution I solidified looping in JavaScript which was a pretty good thing I think.
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
