@@ -1,12 +1,12 @@
 Release 2
 
-![Alt My Reflection](Imgs/Release_2.png?raw=true)
+![Alt My Reflection](imgs/Release_2.png?raw=true)
 
 This example of dog and owner is a one to one relationship because each dog is associated with an owner and each owner is associtaed with an individual animal.
 
 Release 3
 
-![Alt My Reflection](Imgs/Release_4.png?raw=true)
+![Alt My Reflection](imgs/Release_4.png?raw=true)
 
 
 1.  What is a one-to-one database?
