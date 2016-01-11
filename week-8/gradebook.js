@@ -18,6 +18,54 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+// var gradebook = {};
+
+// for (var x = 0; x < students.length; x++) {
+
+//   // console.log(x)
+//   // console.log(students[x])
+
+//   // console.log(gradebook[students[x]] = {});
+
+//   // console.log(scores[x])
+//   //console.log(gradebook[students[x]][testScores] = scores[x]);
+//   gradebook[students[x]] = {};
+
+//   gradebook[students[x]].testScores = scores[x];
+// };
+
+//  var addScore = function(name, score) {
+//    gradebook[name].testScores.push(score);
+//  }
+// gradebook.addScore = addScore;
+
+// var getAverage = function(name){
+//  return average(gradebook[name].testScores)
+// }
+
+// gradebook.getAverage = getAverage;
+
+// var average = function (arrayInt) {
+
+//   var totalSum = 0;
+//   for(var y = 0; y < arrayInt.length; y++) {
+//     totalSum = totalSum + arrayInt[y]
+//     // console.log(arrayInt[y])
+//     // console.log(totalSum)
+//     // console.log('\n')
+//   }
+
+//   var averageInt = totalSum/arrayInt.length;
+//   // console.log(averageInt);
+//   return averageInt;
+// }
+
+// average([1,2,3,4,5])
+// console.log(gradebook['Joseph'].testScores)
+// addScore('Joseph', 10)
+// console.log(gradebook['Joseph'].testScores)
+// __________________________________________
+// Refactored Solution
 var gradebook = {};
 
 for (var x = 0; x < students.length; x++) {
@@ -39,107 +87,27 @@ gradebook.getAverage = getAverage;
 
 var average = function (arrayInt) {
   var totalSum = 0;
+
   for(var y = 0; y < arrayInt.length; y++) {
     totalSum = totalSum + arrayInt[y]
   }
   return totalSum/arrayInt.length;
 }
 
-
-// var gradebook = {};
-
-
-// for (var x = 0; x < students.length; x++) {
-
-
-//   // console.log(x)
-//   // console.log(students[x])
-
-//   // console.log(gradebook[students[x]] = {});
-
-//   // console.log(scores[x])
-//   //console.log(gradebook[students[x]][testScores] = scores[x]);
-//   gradebook[students[x]] = {};
-
-//   gradebook[students[x]].testScores = scores[x];
-
-
-// };
-
-//  var addScore = function(name, score) {
-
-//    gradebook[name].testScores.push(score);
-
-//  }
-
-// gradebook.addScore = addScore;
-
-// var getAverage = function(name){
-
-//  return average(gradebook[name].testScores)
-
-
-// }
-
-// gradebook.getAverage = getAverage;
-
-// var average = function (arrayInt) {
-
-//   var totalSum = 0;
-//   for(var y = 0; y < arrayInt.length; y++) {
-
-
-//     totalSum = totalSum + arrayInt[y]
-//     // console.log(arrayInt[y])
-//     // console.log(totalSum)
-//     // console.log('\n')
-
-
-//   }
-
-//   var averageInt = totalSum/arrayInt.length;
-//   // console.log(averageInt);
-//   return averageInt;
-
-// }
-
-// average([1,2,3,4,5])
-// // console.log(gradebook['Joseph'].testScores)
-// // addScore('Joseph', 10)
-// // console.log(gradebook['Joseph'].testScores)
-
-
-
-
-
-
-
-
-
-
-// __________________________________________
-// Refactored Solution
-
-
-
-
-
-
-
-
 // __________________________________________
 // Reflect
 
 // What did you learn about adding functions to objects?
 
-
+//  After the funtion was created we just added it to the object using the . method that we used last week.  So I did not think it was too hard once we figured out how to set up the problem.
 
 // How did you iterate over nested arrays in JavaScript?
 
-
+//  We iterated over the nested arrays using "for" loops.
 
 // Were there any new methods you were able to incorporate? If so, what were they and how did they work?
 
+//  I don't think that we used any new methods in this challenge.  .length and push are both things that I have used in JavaScript or Ruby before and both do pretty much the same thing in both languages.  Other than that we just implimented a few loops and functions to iterate though the data and to capture and store information so that we could use it later in our solution.
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
