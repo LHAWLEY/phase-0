@@ -27,56 +27,89 @@
 
 // Initial Solution
 
-var groceryList = {};
+// var groceryList = {};
+// // console.log(groceryList)
+
+// function newItem(food, num) {
+//    groceryList[food] = num
+//  };
+
+// newItem('bread', 1)
+// newItem('tomato', 2)
+// newItem('pizza', 6)
+// // console.log(groceryList)
+
+// function removeItem(food){
+//   delete groceryList[food]
+// };
+
+// removeItem('bread')
+// // console.log(groceryList)
+
+// function updateItem(food, num){
+//   groceryList[food] = num
+// };
+
+// updateItem('pizza', 2)
+// updateItem('tomato', 4)
+// // console.log(groceryList)
+
+// function printGroceryList(groceryList){
+//   console.log(food + ":" + groceryList[food]);
+// };
 // console.log(groceryList)
+
+
+// // Refactor
+
+var groceryList = {
+};
 
 function newItem(food, num) {
    groceryList[food] = num
  };
+
+
+function removeItem(food){
+  delete groceryList[food]
+};
+
+
+function updateItem(food, num){
+  groceryList[food] = num
+};
+
+function printGroceryList() {
+  console.log("Grocery List")
+  for (var food in groceryList) {
+    console.log(food,':',groceryList[food])
+  };
+};
+
+
+// Driver Code:
 
 newItem('bread', 1)
 newItem('tomato', 2)
 newItem('pizza', 6)
 // console.log(groceryList)
-
-function removeItem(food){
-  delete groceryList[food]
-};
-
 removeItem('bread')
 // console.log(groceryList)
-
-function updateItem(food, num){
-  groceryList[food] = num
-};
-
 updateItem('pizza', 2)
 updateItem('tomato', 4)
 // console.log(groceryList)
+printGroceryList()
 
+// Reflection
 
-function printGroceryList(groceryList){
-  console.log(food + ";" + groceryList[food] ) console.log('\n')
-};
-console.log(groceryList)
+// 1.  What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
 
+// I reviewed how to set up functions and how to update information in an object.
 
-// // Refactor
+// 2.  What was the most difficult part of this challenge?
 
-var groceryList = {};
+//  I think the most difficult part of this challenge was trying not to let Ruby syntax slip into my JavaScript code. I think that sometimes I get caught up in the solution and forget to pay attention to syntax.\
 
-function newItem(food, num) {
-   groceryList[food] = num
- };
+// 3.  Did an array or object make more sense to use and why?
 
-
-function removeItem(food){
-  delete groceryList[food]
-};
-
-
-function updateItem(food, num){
-  groceryList[food] = num
-};
-
-
+//  I thought that an object made more sense because it allowed for each food item on the list to be a property of the groceryList which easily set up name value pairs for me to iterate through.
