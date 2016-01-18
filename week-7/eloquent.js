@@ -31,8 +31,7 @@ while (triangle.length <= 7) {
 //   else if (counter % 5 == 0)
 //     console.log("Buzz")
 //   else
-//     console.log(counter)
-// };
+//     console.log(counter)// };
 //(figure out where the || operator should go to refactor)
 
 // Chess Board

@@ -26,7 +26,7 @@ def separate_comma(num)
 
   if string_value.length >= 3 && string_value.length <= 6
     return string_value.insert(3, ",").reverse
-  elsif string_value.length >= 7 &&string_value.length <= 9
+  elsif string_value.length >= 7 && string_value.length <= 9
     return string_value.insert(6, ",").insert(3, ",").reverse
   end
 end
